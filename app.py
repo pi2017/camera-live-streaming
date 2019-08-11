@@ -1,3 +1,12 @@
+
+"""
+Python code for webcam streaming over TCP
+Original code is: https://github.com/mrxmamun/camera-live-streaming
+Updata : 11.08.2019
+First you need : pip install -r requirements.txt
+Run: python app.py
+"""
+
 from flask import Flask, render_template, Response
 import cv2
 
@@ -33,4 +42,4 @@ def index():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0')
+    app.run(host='127.0.0.1')
